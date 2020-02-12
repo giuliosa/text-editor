@@ -1,0 +1,43 @@
+.section{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width:100%;
+    margin-top: 20px;
+
+    &-content{
+    }
+    &-inner{
+        display: flex;
+        align-items: center;
+        margin: 2px 20%;
+        .add-button{
+            .button-circle{
+                color:#666;
+                background-color:#fff;
+                border:1px solid #666;
+                font-size: 18px;
+                margin-right: 15px;
+                padding:4px 8px;
+                border-radius: 50%;
+                transition: all .3s ease-in-out;
+                &:hover{
+                    cursor:pointer;
+                    background-color:darkgray;
+                    color: #fff;
+                    border-color:#fff;
+                }
+            }
+        }
+        .graphe{
+            font-style:normal;
+            font-size:21px;
+
+            .default-value{
+                color:#bbb;
+
+                &::selection{
+                    background-color: white;
+                }
+            }
+        }
+    }
+}
